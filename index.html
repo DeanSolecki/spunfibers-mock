@@ -3,169 +3,426 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Spunfibers</title>
+		<link rel="stylesheet" href="slick/slick.css" />
+		<link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="stylesheets/app.css" />
+		<link rel="stylesheet" href="scss/foundation-icons/foundation-icons.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="top-bar-wrap contain-to-grid">
+			<nav class="top-bar" data-topbar role="navigation">
+				<ul class="title-area">
+					<li class="name">
+						<h1><a href="#">Spunfibers</a></h1>
+					</li>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+					<li class="toggle-topbar menu-icon"><a href="#"></a></li>
+				</ul>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+				<section class="top-bar-section">
+					<!-- left nav -->
+					<ul class="left">
+						<li><a href="#">Home</a></li>
+						<li class="active"><a href="#">Outfitter</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
+					<!-- right nav -->
+					<ul class="right">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div><!-- end top-bar-wrap -->
+
+		<!-- main content -->
+		<div class="row">
+			<div class="small-12 medium-6 large-4 columns">
+				<div class="outfit">
+					<ul class="tabs" data-tab>
+						<li class="tab-title active"><a href="#outfit">Outfit</a></li>
+						<li class="tab-title"><a href="#outfit-saves">Saves</a></li>
+						<li class="tab-title"><a href="#outfit-filters">Filters</a></li>
+					</ul>
+					<div class="tabs-content">
+						<div class="content active" id="outfit">
+							outfit goes here
+						</div>
+						<div class="content" id="outfit-saves">
+							outfit saves here
+						</div>
+						<div class="content" id="outfit-filters">
+							outfit filters here
+						</div>
+					</div><!-- end tabs-content -->
+				</div><!-- end outfit -->
+			</div><!-- end col -->
+
+			<div class="hide-for-small-only medium-6 large-8 columns">
+				<div class="selector-box">
+					<div class="shirts-selector">
+						<ul class="tabs" data-tab>
+							<li class="tab-title active"><a href="#shirts">Shirts</a></li>
+							<li class="tab-title"><a href="#shirts-saves">Saves</a></li>
+							<li class="tab-title"><a href="#shirts-filters">Filters</a></li>
+						</ul>
+						<div class="tabs-content">
+							<div class="content active" id="shirts">
+								<div class="shirt-viewer">
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/18/_10334738.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Non-Iron Trim Fit Gingham Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $49.50
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/19/_9966079.jpg') no-repeat center center; 
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Smartcare Traditional Fit Check Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $34.75
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/6/_10288686.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Trim Fit Check Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Ted Baker London</br>
+												Price: $49.25
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/6/_9412586.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Smartcare Trim Fit Plaid Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $32.49
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/2/_9969502.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Non-Iron Trim Fit Plaid Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Calibrate</br>
+												Price: $29.75
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/14/_7124514.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Trim Fit Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: David Donahue</br>
+												Price: $135.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/12/_10500512.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Smartcare Wrinkle Free Trim Fit Check Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $32.49
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/16/_9629136.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Smartcare Wrinkle Free Trim Solid Pinpoint Cotton Trim Fit Dress Shirt</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $27.49
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+								</div><!-- end shirt-viewer -->
+							</div><!-- end content #shirts -->
+							<div class="content" id="shirts-saves">
+								saves go here
+							</div><!-- end content #saves -->
+							<div class="content" id="shirts-filters">
+								filters go here
+							</div><!-- end content #filters -->
+						</div><!-- end tabs-content -->
+					</div><!-- end shirts-selector -->
+					<div class="pants-selector">
+						<ul class="tabs" data-tab>
+							<li class="tab-title active"><a href="#pants">Pants</a></li>
+							<li class="tab-title"><a href="#pants-saves">Saves</a></li>
+							<li class="tab-title"><a href="#pants-filters">Filters</a></li>
+						</ul>
+						<div class="tabs-content">
+							<div class="content active" id="pants">
+								<div class="pants-viewer">
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/4/_9981104.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												'Sharp' Flat Front Wool Trousers</br>
+												Store: Nordstrom</br>
+												Brand: BOSS</br>
+												Price: $97.49
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/8/_9838808.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Straight Leg Washed Chinos</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $34.75
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/18/_10183998.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												'Protege SUD' Straight Leg Pants</br>
+												Store: Nordstrom</br>
+												Brand: AG</br>
+												Price: $88.98
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/1/_9156621.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Skinny Fit Flat Front Trousers</br>
+												Store: Nordstrom</br>
+												Brand: Topman</br>
+												Price: $75.00</br>
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/7/_10103767.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Washed Slim Fit Chinos</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $49.50
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/8/_10632748.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												'Devon' Flat Front Plaid Wool Trousers</br>
+												Store: Nordstrom</br>
+												Brand: Zanella</br>
+												Price: $172.49
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/2/_10666602.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												Flat Front Houndstooth Wool Trouser</br>
+												Store: Nordstrom</br>
+												Brand: Nordstrom</br>
+												Price: $98.50
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/2/_10630822.jpg') no-repeat center center;
+																							background-size: 10vh;">
+										<header>
+											<p>
+												'Devon' Flat Front Plaid Wool Trousers</br>
+												Store: Nordstrom</br>
+												Brand: Zanella</br>
+												Price: $172.49
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+								</div><!-- end pants-viewer -->
+							</div><!-- end content #pants -->
+							<div class="content" id="pants-saves">
+								saves go here
+							</div><!-- end content #saves -->
+							<div class="content" id="pants-filters">
+								filters go here
+							</div><!-- end content #filters -->
+						</div><!-- end tabs-content -->
+					</div><!-- end pants-selector -->
+					<div class="shoes-selector">
+						<ul class="tabs" data-tab>
+							<li class="tab-title active"><a href="#shoes">Shoes</a></li>
+							<li class="tab-title"><a href="#shoes-saves">Saves</a></li>
+							<li class="tab-title"><a href="#shoes-filters">Filters</a></li>
+						</ul>
+						<div class="tabs-content">
+							<div class="content active" id="shoes">
+								<div class="shoes-viewer">
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/6/_9225726.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Strand' Cap Toe Oxford(Men)</br>
+												Store: Nordstrom</br>
+												Brand: Allen Edmonds</br>
+												Price: $385.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/11/_10370191.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Richmond' Buck Shoe (Men)</br>
+												Store: Nordstrom</br>
+												Brand: 1901</br>
+												Price: $99.95
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/15/_8600315.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Brandon' Cap Toe Oxford (Nordstrom Exclusive) (Men)</br>
+												Store: Nordstrom</br>
+												Brand: To Boot New York</br>
+												Price: $325.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/15/_8244795.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Magnifico' Loafer</br>
+												Store: Nordstrom</br>
+												Brand: Salvatore Ferragamo</br>
+												Price: $540.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/19/_10025319.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Brooklyn' Double Monk Strap Shoe (Men)</br>
+												Store: Nordstrom</br>
+												Brand: To Boot New York</br>
+												Price: $199.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/19/_9931639.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Sardegna 6' Driving Shoe (Men)</br>
+												Store: Nordstrom</br>
+												Brand: Salvatore Ferragamo</br>
+												Price: $384.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/6/_10004166.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Stark' Cap Toe Derby (Men)</br>
+												Store: Nordstrom</br>
+												Brand: To Boot New York</br>
+												Price: $199.90
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+									<div class="img-wrap" style="background: url('http://g.nordstromimage.com/imagegallery/store/product/Zoom/8/_7151668.jpg') no-repeat center center;
+																							background-size: 10vh;
+																							background-position: center bottom;">
+										<header>
+											<p>
+												'Warwick' Cap Toe Oxford</br>
+												Store: Nordstrom</br>
+												Brand: To Boot New York</br>
+												Price: $450.00
+											</p>
+										</header>
+									</div><!-- end img-wrap -->
+								</div><!-- end shoes-viewer -->
+							</div><!-- end content #shoes -->
+							<div class="content" id="shoes-saves">
+								saves go here
+							</div><!-- end content #saves -->
+							<div class="content" id="shoes-filters">
+								filters go here
+							</div><!-- end content #filters -->
+						</div><!-- end tabs-content -->
+					</div><!-- end shoes-selector -->
+				</div><!-- end selector-box -->
+			</div><!-- end col -->
+		</div><!-- end row -->
+
+		<!-- footer -->
+		<footer class="show-for-medium-up">
+			<div class="footer-wrap">
+				<div class="row">
+					<div class="medium-6 small-12 columns">
+						<h3>Spunfibers</h3>
+					</div><!-- end col -->
+					<div class="medium-6 small-12 columns">
+						<div class="footlinks">
+							<a href="#">About</a>
+							<i class="step fi-asterisk size-12"></i>
+							<a href="#">Contact</a>
+							<i class="step fi-asterisk size-12"></i>
+							<a href="#">FAQ</a>
+							<i class="step fi-asterisk size-12"></i>
+							<a href="#">Help</a>
+						</div><!-- end footLinks -->
+					</div><!-- end col -->
+				</div><!-- row -->
+			</div><!-- footer-wrap -->
+		</footer>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/stickyFooter.js"></script>
+		<script src="slick/slick.min.js"></script>
+		<script src="js/slickIni.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
