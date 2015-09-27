@@ -61,6 +61,28 @@
 	clear: both;
 }
 
+/* outfit content */
+.outfit-shirt, .outfit-pants, .outfit-shoes {
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+}
+
+.outfit-shirt {
+	height: 20vh;
+}
+
+.outfit-pants {
+	height: 17vh;
+	margin-top: 2vh;
+}
+
+.outfit-shoes {
+	height: 15vh;
+	margin-top: 2vh;
+}
+
 /* sliders */
 .shirts-selector, .pants-selector, .shoes-selector {
 	height: 33.3333%;
@@ -75,15 +97,19 @@
 	padding-right: 2em;
 }
 
-/* img-wrap overlay container */
-.img-wrap {
-	position: relative;
-	overflow: hidden;
+.selector-img {
 	height: 10vh;
 	width: 10vh;
 }
 
-.img-wrap > header {
+/* img-wrap overlay container */
+.img-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.img-wrap > header,
+.img-wrap > header > a {
 	color: transparent;
 }
 
@@ -117,15 +143,22 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, .5);
+	background: rgba(255, 255, 255, .7);
 }
 
-.img-wrap:hover > header > p {
+.img-wrap:hover > header > p,
+.img-wrap:hover > header > a {
 	margin: 0;
 	font-size: 9px;
 	color: black;
 	position: relative;
 	z-index: 1;
+}
+
+.img-wrap:hover > header > a {
+	float: right;
+	font-size: 12px;
+	padding-right: .5em;
 }
 
 * {
